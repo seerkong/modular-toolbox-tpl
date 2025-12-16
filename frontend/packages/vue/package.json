@@ -1,0 +1,24 @@
+{
+  "name": "@frontend/vue-shell",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "bun run ../../scripts/sync-static.ts vue",
+    "dev": "vite",
+    "prebuild": "bun run ../../scripts/sync-static.ts vue",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@frontend/core": "workspace:*",
+    "@frontend/mediator": "workspace:*",
+    "@app/shared": "workspace:*",
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.0",
+    "vite": "^5.0.0"
+  }
+}

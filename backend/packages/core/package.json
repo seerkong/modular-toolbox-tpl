@@ -1,0 +1,20 @@
+{
+  "name": "@backend/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@app/shared": "workspace:*",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.19"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

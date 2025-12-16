@@ -1,0 +1,22 @@
+{
+  "name": "modular-toolbox-tpl-backend",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "../shared"
+  ],
+  "scripts": {
+    "dev": "cd packages/elysia && bun run dev",
+    "start": "cd packages/elysia && bun run start",
+    "build": "cd packages/elysia && bun run build",
+    "dev:koa": "cd packages/koa && pnpm run dev",
+    "start:koa": "cd packages/koa && pnpm run start",
+    "build:koa": "cd packages/koa && pnpm run build",
+    "test": "cd packages/core && bun run test && cd ../mediator && bun run test"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.4.0"
+  }
+}

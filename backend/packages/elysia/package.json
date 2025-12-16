@@ -1,0 +1,23 @@
+{
+  "name": "@backend/elysia-shell",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "build": "bun build --compile --target bun --external sqlite3 --external reflect-metadata src/index.ts --outfile dist/modular-toolbox-tpl-backend"
+  },
+  "dependencies": {
+    "@app/shared": "workspace:*",
+    "@backend/mediator": "workspace:*",
+    "elysia": "^0.8.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@backend/mediator",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@app/shared": "workspace:*",
+    "@backend/core": "workspace:*",
+    "mysql2": "^3.9.4",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.6",
+    "typeorm": "^0.3.19"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
