@@ -27,7 +27,7 @@
     "build:desktop:react": "bun run build:web:react-elysia && cd desktop && FRONTEND_SHELL=react bun run scripts/build-dispatch.ts",
     "install:all:bun": "bun run scripts/install-all.ts",
     "install:all:nodejs": "node scripts/install-all-nodejs.cjs",
-    "uninstall:all": "rm -rf node_modules backend/node_modules backend/packages/*/node_modules frontend/node_modules frontend/packages/*/node_modules desktop/node_modules shared/node_modules pnpm-lock.yaml bun.lock",
+    "uninstall:all": "bun run scripts/uninstall-all.ts",
     "dev:web:vue-koa": "concurrently -n frontend,backend -c blue,green \"bun run dev:frontend:vue\" \"pnpm run dev:backend:koa\"",
     "dev:web:react-koa": "concurrently -n frontend,backend -c blue,green \"bun run dev:frontend:react\" \"pnpm run dev:backend:koa\""
   },
